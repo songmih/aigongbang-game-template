@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>별 먹기 게임</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="game-app" aria-label="별 먹기 게임">
+      <section class="game-card">
+        <header class="game-header">
+          <div>
+            <p class="eyebrow">AI공방 학생용 게임 템플릿</p>
+            <h1>별 먹기 게임</h1>
+          </div>
+          <button id="muteButton" class="icon-button" type="button" aria-pressed="false">음소거</button>
+        </header>
+
+        <section class="score-board" aria-label="게임 정보">
+          <div>
+            <span>점수</span>
+            <strong id="scoreText">0</strong>
+          </div>
+          <div>
+            <span>남은 시간</span>
+            <strong id="timeText">30</strong>
+          </div>
+          <div>
+            <span>상태</span>
+            <strong id="stateText">대기중</strong>
+          </div>
+        </section>
+
+        <section class="play-panel" aria-label="게임 화면">
+          <canvas id="gameCanvas" width="360" height="520"></canvas>
+          <div id="overlay" class="overlay">
+            <h2 id="overlayTitle">별을 많이 모아보세요</h2>
+            <p id="overlayText">시작 버튼을 누르거나 Space 키를 누르면 게임이 시작됩니다.</p>
+            <button id="overlayStartButton" type="button">시작</button>
+          </div>
+        </section>
+
+        <section class="main-controls" aria-label="게임 제어">
+          <button id="startButton" type="button">시작</button>
+          <button id="pauseButton" type="button">일시정지</button>
+          <button id="restartButton" type="button">다시하기</button>
+        </section>
+
+        <section class="touch-controls" aria-label="모바일 이동 버튼">
+          <button class="touch-button up" type="button" data-direction="up">위</button>
+          <button class="touch-button left" type="button" data-direction="left">왼쪽</button>
+          <button class="touch-button down" type="button" data-direction="down">아래</button>
+          <button class="touch-button right" type="button" data-direction="right">오른쪽</button>
+        </section>
+
+        <p class="hint">
+          키보드: 방향키/WASD 이동, Space 시작, P 일시정지, R 다시 시작
+        </p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
