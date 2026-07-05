@@ -12,6 +12,10 @@
 
 별도 서버, npm, 빌드 과정은 필요 없습니다.
 
+## 배포 주소
+
+https://songmih.github.io/aigongbang-game-template/
+
 ## 파일 구조
 
 ```text
